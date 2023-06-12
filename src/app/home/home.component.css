@@ -8,7 +8,7 @@ main{
 }
 .task{
     display: flex;
-    justify-content: end;
+    align-items: center;
 }
 .btn1-ds{
     margin-left: 675px;
