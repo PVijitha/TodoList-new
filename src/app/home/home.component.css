@@ -6,13 +6,16 @@ main{
     margin-top: 130px;
     align-items: center;
 }
+
 .task{
     display: flex;
     align-items: center;
 }
+
 .btn1-ds{
     margin-left: 675px;
 }
+
 .box-1{
     display: flex;
     align-items: center;
@@ -23,6 +26,7 @@ main{
     margin-bottom: 50px;
     box-shadow: 10px 10px rgba(135, 134, 134, 0.256);
 }
+
 .box-2{
     display: flex;
     align-items: center;
@@ -32,6 +36,7 @@ main{
     border-style:groove;
     margin-bottom: 7px;
 }
+
 .textarea-ds{
     height: 100px;
     width: 400px;

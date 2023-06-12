@@ -24,15 +24,8 @@ export class HomeComponent implements OnInit {
   todoItemsArray: string[] =[];
   addTask(){
     this.todoItemsArray.push(this.todoItem);
-    this.onCloseModel();
     localStorage.setItem('todoItems',JSON.stringify(this.todoItemsArray))
     this.todoItem = '';
-  }
-  onCloseModel(){
-    const notNull = document.getElementById('content');
-    if(notNull != null){
-      notNull.style.display = 'none';
-    }
   }
   deleteTask(task: string) {
     const index = this.todoItemsArray.indexOf(task);
