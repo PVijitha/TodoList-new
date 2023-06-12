@@ -6,8 +6,8 @@
 	</div>
 	<div class="box-2" *ngFor="let item of todoItemsArray">
 		<div class="task">
-			<button (click)="deleteTask(item)" class="btn btn-outline-danger m-3">X</button>
-			<p class="m-3">{{ item }}</p>
+			<button (click)="deleteTask(item)" class="btn btn-outline-danger ms-2 mt-4 mb-4">X</button>
+			<p class="ms-3 mt-3 mb-3">{{ item }}</p>
 	  </div>
 	</div>
 <ng-template #content let-d="dismiss" id="taskModel">
