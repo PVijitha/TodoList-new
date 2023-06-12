@@ -1,0 +1,9 @@
+.bg-maroon{
+   background-color: var(--T-Darkmaroon);
+}
+.nav-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}

@@ -1,0 +1,25 @@
+<main>
+<app-navbar></app-navbar>
+<div class="box-1">
+	<h3 class="ms-3">Task Name</h3>
+	<button class="btn btn-lg btn-outline-success btn1-ds" (click)="open(content)">+</button>
+	</div>
+	<div class="box-2" *ngFor="let item of todoItemsArray">
+		<div class="task">
+			<button (click)="deleteTask(item)" class="btn btn-outline-danger m-3">X</button>
+			<p class="m-3">{{ item }}</p>
+	  </div>
+	</div>
+<ng-template #content let-d="dismiss" id="taskModel">
+	<form #myForm="ngForm">
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Task Name</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+	</div>
+		<textarea name="textarea" class="form-control" id="textarea" class="textarea-ds ms-5" placeholder="My task" #textarea="ngModel" [(ngModel)]="todoItem" required></textarea>
+	<div class="modal-footer">
+		<button type="submit" [disabled]="!myForm.valid" class="btn btn-outline-success" (click)="addTask()" (click)="d('Cross click')">Save</button>
+	</div>
+</form>
+</ng-template>
+</main>
